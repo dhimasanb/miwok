@@ -15,9 +15,11 @@
  */
 package com.example.android.miwok;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+
+import java.util.ArrayList;
 
 public class NumbersActivity extends AppCompatActivity {
 
@@ -28,6 +30,7 @@ public class NumbersActivity extends AppCompatActivity {
 
         // Create an array
         String[] words = new String[10];
+
         // Initialize elements in array
         words[0] = "one";
         words[1] = "two";
@@ -42,5 +45,16 @@ public class NumbersActivity extends AppCompatActivity {
 
         Log.v("NumbersActivity", "Word at index 0: " + words[0]);
         Log.v("NumbersActivity", "Word at index 1: " + words[1]);
+
+        // Create Array List
+        ArrayList<String> cars = new ArrayList<>();
+
+        // Initialize elements in array list
+        cars.add("Toyota");
+        cars.add("BMW");
+        cars.add("Mercedes");
+
+        Log.v("NumbersActivity", "Cars at index 0: " + cars.get(0));
+        Log.v("NumbersActivity", "Cars at index 1: " + cars.get(1));
     }
 }
