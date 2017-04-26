@@ -59,22 +59,12 @@ public class NumbersActivity extends AppCompatActivity {
         LinearLayout rootView = (LinearLayout)findViewById(R.id.rootView);
 
         int index = 0;
+        while(index<cars.size()) {
+            TextView carView = new TextView(this);
+            carView.setText(cars.get(index));
+            rootView.addView(carView);
 
-        TextView carView = new TextView(this);
-        carView.setText(cars.get(index));
-        rootView.addView(carView);
-
-        index = index + 1;
-
-        TextView carView2 = new TextView(this);
-        carView2.setText(cars.get(index));
-        rootView.addView(carView2);
-
-        index = index + 1;
-
-        TextView carView3 = new TextView(this);
-        carView3.setText(cars.get(index));
-        rootView.addView(carView3);
-
+            index++; // increment
+        }
     }
 }
