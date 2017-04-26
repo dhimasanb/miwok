@@ -18,6 +18,8 @@ package com.example.android.miwok;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -54,7 +56,25 @@ public class NumbersActivity extends AppCompatActivity {
         cars.add("BMW");
         cars.add("Mercedes");
 
-        Log.v("NumbersActivity", "Cars at index 0: " + cars.get(0));
-        Log.v("NumbersActivity", "Cars at index 1: " + cars.get(1));
+        LinearLayout rootView = (LinearLayout)findViewById(R.id.rootView);
+
+        int index = 0;
+
+        TextView carView = new TextView(this);
+        carView.setText(cars.get(index));
+        rootView.addView(carView);
+
+        index = index + 1;
+
+        TextView carView2 = new TextView(this);
+        carView2.setText(cars.get(index));
+        rootView.addView(carView2);
+
+        index = index + 1;
+
+        TextView carView3 = new TextView(this);
+        carView3.setText(cars.get(index));
+        rootView.addView(carView3);
+
     }
 }
