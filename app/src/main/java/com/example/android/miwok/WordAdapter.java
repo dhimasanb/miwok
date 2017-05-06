@@ -15,8 +15,8 @@ import java.util.ArrayList;
 
 public class WordAdapter extends ArrayAdapter<Word> {
 
-    public WordAdapter(Context context, ArrayList<Word> pWords) {
-        super(context, 0, pWords);
+    public WordAdapter(Context context, ArrayList<Word> words) {
+        super(context, 0, words);
     }
 
     @Override
@@ -29,11 +29,11 @@ public class WordAdapter extends ArrayAdapter<Word> {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
-        Word local_word = getItem(position);
+        Word currentWord = getItem(position);
         TextView miwokTextView = (TextView) listItemView.findViewById(R.id.miwok_text_view);
-        miwokTextView.setText(local_word.getMiwokTranslation());
+        miwokTextView.setText(currentWord.getMiwokTranslation());
         TextView defaultTextView = (TextView) listItemView.findViewById(R.id.default_text_view);
-        defaultTextView.setText(local_word.getDefaultTranslation());
+        defaultTextView.setText(currentWord.getDefaultTranslation());
 
         return listItemView;
     }
