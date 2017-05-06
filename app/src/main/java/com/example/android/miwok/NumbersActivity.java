@@ -32,16 +32,16 @@ public class NumbersActivity extends AppCompatActivity {
         ArrayList<Word> words = new ArrayList<Word>();
 
         //words.add("one");
-        words.add(new Word("one", "luffy"));
-        words.add(new Word("two", "zoro"));
-        words.add(new Word("three", "nami"));
-        words.add(new Word("four", "usop"));
-        words.add(new Word("five", "sanji"));
-        words.add(new Word("six", "chopper"));
-        words.add(new Word("seven", "robin"));
-        words.add(new Word("eight", "franky"));
-        words.add(new Word("nine", "brook"));
-        words.add(new Word("ten", "jinbei"));
+        words.add(new Word("one", "lutti"));
+        words.add(new Word("two", "otiiko"));
+        words.add(new Word("three", "tolookosu"));
+        words.add(new Word("four", "oyyisa"));
+        words.add(new Word("five", "massokka"));
+        words.add(new Word("six", "temmokka"));
+        words.add(new Word("seven", "kenekaku"));
+        words.add(new Word("eight", "kawinta"));
+        words.add(new Word("nine", "wo’e"));
+        words.add(new Word("ten", "na’aacha"));
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the
